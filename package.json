@@ -1,7 +1,7 @@
 {
-  "name": "vite-demo",
-  "private": true,
-  "version": "0.0.0",
+  "name": "vibbe",
+  "version": "1.0.0",
+  "description": "Where NFTs, Music, Blockchain Harmony Resonate.",
   "type": "module",
   "scripts": {
     "dev": "vite",

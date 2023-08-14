@@ -1,24 +1,48 @@
-import {Suspense} from 'react';
-import {BrowserRouter} from 'react-router-dom';
-import {Router} from './general/Router.jsx';
-import {Loading} from './components/Loading.jsx';
+// import { useState } from "react";
+// import Header from "./components/header";
+import { BrowserRouter } from "react-router-dom";
+// import Footer from "./components/footer/Footer.jsx";
+// import Navbar from "./components/navbar/Navbar.jsx";
+import { Router } from "./components/router/Router.jsx";
+// import { HomeLoader } from "./components/loader/Loading.jsx";
+// import { HeaderProvider } from "./contexts/HeaderContext.jsx";
+// import MobileNavbar from "./components/mobile-navbar/MobileNavbar.jsx";
+import { ScrollToTop } from "./components/scroll/ScrollToTop.jsx";
+// import LocomotiveScroller from "./components/scroll/LocomotiveScroller.jsx";
 
-export const PageWithHeader = ({children}) => (
-  <div className="flex h-full flex-col">{children}</div>
-);
+export function App() {
+  // const [loading, setLoading] = useState(true);
 
-export const App = () => (
-  <BrowserRouter>
-    <Suspense
-      fallback={
-        <PageWithHeader>
-          <Loading name="suspense"/>
-        </PageWithHeader>
-      }
-    >
-        <div className="h-full bg-indigo-50 p-4 lg:p-24">
-          <Router/>
-        </div>
-    </Suspense>
-  </BrowserRouter>
-);
+  // {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 4900);
+  // }
+
+  return (
+    <BrowserRouter>
+      <main className="text-white">
+        {/* {loading ? (
+          <>
+            <HomeLoader />
+          </>
+        ) : ( */}
+        <>
+          {/* <HeaderProvider> */}
+          {/* <LenisScroller> */}
+          {/* <LocomotiveScroller> */}
+          <ScrollToTop>
+            {/* <Header /> */}
+            {/* <Navbar /> */}
+            {/* <MobileNavbar /> */}
+            <Router />
+            {/* <Footer /> */}
+          </ScrollToTop>
+          {/* </LocomotiveScroller> */}
+          {/* </HeaderProvider> */}
+        </>
+        {/* )} */}
+      </main>
+    </BrowserRouter>
+  );
+}

@@ -1,0 +1,194 @@
+/* Font Links */
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400&family=Open+Sans:wght@800&display=swap");
+
+/* Tailwind Styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-header {
+    @apply text-5xl font-bold uppercase text-white;
+  }
+  .title-header__white {
+    @apply text-4xl font-bold text-white;
+  }
+  .title-header__purple {
+    @apply text-4xl font-bold text-[#c1a7cd];
+  }
+}
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Kodchasan";
+  overflow-x: hidden !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background: linear-gradient(
+    135deg,
+    #1b1630 24.67%,
+    #060407 51.93%,
+    #1b1630 72.65%,
+    #08050b 94.09%
+  );
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  overflow: hidden !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+section::-webkit-scrollbar {
+  display: none;
+}
+
+.section-bg-title {
+  color: rgba(254, 254, 254, 0.07);
+  font-family: "Open Sans";
+  font-size: 26rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-bg-title {
+    font-size: 10rem;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+.gradient-outline {
+  border: double 0.0625rem transparent;
+  font-weight: 400;
+  border-radius: 0.7rem;
+  position: relative;
+}
+
+.gradient-outline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(2, 89, 77, 1),
+    rgba(82, 61, 167, 1)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.seection-btn {
+  font-size: 2rem;
+  background-color: #513da5;
+  border-radius: 0.3125rem;
+  padding: 1.5rem 5.625rem;
+}
+
+@media only screen and (max-width: 620px) {
+  .seection-btn {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* Navbar */
+
+.nav-btn {
+  background-color: #513da5;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #835978;
+  padding: 1.25rem 1.25rem;
+}
+
+/* Hero */
+
+/* Discover */
+
+.discover {
+  width: 54.1875rem;
+}
+
+.second-logo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 33%;
+  margin-top: 12.5rem;
+}
+
+/* Airdrop */
+
+/* Features */
+
+.features-card__blur {
+  backdrop-filter: blur(25px);
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Genesis */
+
+.genesis-nft {
+  background: url("/images/genesis-nft-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.coming-soon {
+  text-shadow: 0 0 0.8125rem #fff;
+}
+
+/* Tokenomics */
+
+.tokenomics-graph {
+  background: url("/public/images/tokenomics.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Community */
+
+.community-logo {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
