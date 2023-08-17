@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function NavPage({ toggleNavPage }) {
   return (
     <motion.div
-      className="fixed inset-0 z-50 bg-white"
+      className="nav_background fixed inset-0 z-50"
       initial={{
         opacity: 0,
         y: 10,
@@ -15,16 +15,16 @@ export default function NavPage({ toggleNavPage }) {
         y: 0,
       }}
     >
-      <div className="relative">
+      <div className="relative h-full">
         <HamburgerEnabledIcon toggleNavPage={toggleNavPage} />
-        <div className="grid grid-cols-1 space-y-4 pl-5 pt-9 text-2xl font-bold text-black">
+        <div className="grid h-full grid-cols-1 place-content-center space-y-4 pl-5 pt-12 text-4xl font-bold">
           <Link className="nav-link" to="/">
             Home
           </Link>
-          <Link className="nav-link" to="/docsdocs">
+          <Link className="nav-link" to="/docs">
             Docs
           </Link>
-          <Link className="nav-link" to="/explorex">
+          <Link className="nav-link" to="/explore">
             Explore
           </Link>
           <Link className="nav-link" to="/community">

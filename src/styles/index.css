@@ -8,6 +8,9 @@
 @tailwind utilities;
 
 @layer components {
+  .center-with-flex {
+    @apply flex items-center justify-center;
+  }
   .section-header {
     @apply text-5xl font-bold uppercase text-white;
   }
@@ -16,6 +19,9 @@
   }
   .title-header__purple {
     @apply text-4xl font-bold text-[#c1a7cd];
+  }
+  .features-card {
+    @apply gradient-outline features-card__blur flex h-[11rem] w-[15rem] items-center justify-center p-3 md:h-[14rem] md:w-[19rem] md:p-4 lg:h-[17rem] lg:w-[24rem] lg:p-4;
   }
 }
 
@@ -124,7 +130,15 @@ section::-webkit-scrollbar {
 }
 
 /* Navbar */
-
+.nav_background {
+  background: linear-gradient(
+    135deg,
+    #1b1630 24.67%,
+    #060407 51.93%,
+    #1b1630 72.65%,
+    #08050b 94.09%
+  );
+}
 .nav-btn {
   background-color: #513da5;
   border-radius: 0.3125rem;

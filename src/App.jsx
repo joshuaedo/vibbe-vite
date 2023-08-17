@@ -8,7 +8,7 @@ import NavBar from "./components/navbar/Navbar.jsx";
 export function App() {
   return (
     <BrowserRouter>
-      <main className="space-y-20 text-white">
+      <main className="text-white">
         <LocomotiveScroller>
           <ScrollToTop>
             <NavBar />
