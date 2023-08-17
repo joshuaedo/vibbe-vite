@@ -1,8 +1,8 @@
 // import NavPage from "./NavPage";
 
 export default function NavBar() {
-   return ( 
-   <header
+  return (
+    <header
       id="navbar"
       className="flex items-center justify-center overflow-x-hidden"
     >
@@ -39,5 +39,5 @@ export default function NavBar() {
         </div>
       </nav>
     </header>
-)
+  );
 }

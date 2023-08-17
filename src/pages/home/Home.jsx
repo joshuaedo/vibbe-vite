@@ -1,4 +1,7 @@
-import { DiscoverWavesCanvas, RoadMapCanvas, } from "../../components/image/Image";
+import {
+  DiscoverWavesCanvas,
+  RoadMapCanvas,
+} from "../../components/image/Image";
 
 export const Home = () => (
   <>
@@ -36,37 +39,17 @@ export const Home = () => (
       <section id="discover" className="space-y-20">
         <div className="flex items-center justify-center">
           <p className="mx-5 whitespace-normal  text-center text-xl md:text-3xl lg:text-4xl ">
-          &quot;&quot;Step into a new era of music creation, powered by <br />
+            &quot;&quot;Step into a new era of music creation, powered by <br />
             the blockchain&quot;
           </p>
         </div>
         <div className="flex items-center justify-center">
           <img src="/images/wave (1).png" alt="" />
-          <img
-            src="/images/wave (2).png"
-            alt=""
-            className="hidden md:flex"
-          />
-          <img
-            src="/images/wave(3).png"
-            alt=""
-            className="hidden lg:flex"
-          />
-          <img
-            src="/images/wave(4).png"
-            alt=""
-            className="hidden lg:flex"
-          />
-          <img
-            src="/images/wave(4).png"
-            alt=""
-            className="hidden md:flex"
-          />
-          <img
-            src="/images/wave(3).png"
-            alt=""
-            className="hidden xl:flex"
-          />
+          <img src="/images/wave (2).png" alt="" className="hidden md:flex" />
+          <img src="/images/wave(3).png" alt="" className="hidden lg:flex" />
+          <img src="/images/wave(4).png" alt="" className="hidden lg:flex" />
+          <img src="/images/wave(4).png" alt="" className="hidden md:flex" />
+          <img src="/images/wave(3).png" alt="" className="hidden xl:flex" />
         </div>
         <div className="flex items-center justify-center">
           <p className="discover mx-5 text-center text-xl md:text-3xl lg:text-4xl">
@@ -75,7 +58,7 @@ export const Home = () => (
             this revolutionary journey to reshape the music industry.
           </p>
         </div>
-       <DiscoverWavesCanvas />
+        <DiscoverWavesCanvas />
       </section>
 
       {/* <!-- Airdrop --> */}
@@ -88,10 +71,10 @@ export const Home = () => (
           <div className="my-8 flex items-center justify-center">
             <p className="mx-5 w-[77rem] text-center text-xl text-white md:text-3xl lg:text-4xl">
               Join our exclusive airdrop campaign and be part of the music
-              revolution! As a token of appreciation for your support, we&apos;re
-              giving away free VIBBE tokens to our community members. Don&apos;t miss
-              this opportunity to get involved in the future of music and be
-              rewarded for your participation.
+              revolution! As a token of appreciation for your support,
+              we&apos;re giving away free VIBBE tokens to our community members.
+              Don&apos;t miss this opportunity to get involved in the future of
+              music and be rewarded for your participation.
             </p>
           </div>
           <div className="flex items-center justify-center">
@@ -189,7 +172,7 @@ export const Home = () => (
             <div className="gradient-outline h-[85%] w-[95%]"></div>
           </div>
           <p className="section-bg-title">ROADMAP</p>
-         <RoadMapCanvas />
+          <RoadMapCanvas />
           <div className="left-[7rem] top-[24rem] z-20 lg:absolute">
             <h3 className="text-3xl md:text-4xl lg:text-5xl">STAGE 1</h3>
             <ul className="text-lg md:text-xl lg:text-2xl">
@@ -229,8 +212,8 @@ export const Home = () => (
         </div>
         <div className="mb-[10.3rem] flex items-center justify-center">
           <p className="max-w-[70rem] text-2xl font-light md:text-3xl lg:text-4xl">
-            From melodies to tokens, we&apos;re hitting all the right notes in the
-            world of music NFTs.
+            From melodies to tokens, we&apos;re hitting all the right notes in
+            the world of music NFTs.
           </p>
         </div>
       </section>
@@ -270,6 +253,6 @@ export const Home = () => (
           </button>
         </div>
       </section>
-    </main>  
+    </main>
   </>
 );
