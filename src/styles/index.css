@@ -109,7 +109,7 @@ section::-webkit-scrollbar {
   mask-composite: exclude;
 }
 
-.seection-btn {
+.section-btn {
   font-size: 2rem;
   background-color: #513da5;
   border-radius: 0.3125rem;
@@ -117,7 +117,7 @@ section::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 620px) {
-  .seection-btn {
+  .section-btn {
     font-size: 1rem;
     padding: 1rem 2rem;
   }
@@ -177,7 +177,7 @@ section::-webkit-scrollbar {
 /* Tokenomics */
 
 .tokenomics-graph {
-  background: url("/public/images/tokenomics.png");
+  background: url("/images/tokenomics.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

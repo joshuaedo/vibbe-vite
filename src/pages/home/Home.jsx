@@ -1,46 +1,7 @@
+import { DiscoverWavesCanvas, RoadMapCanvas, } from "../../components/image/Image";
+
 export const Home = () => (
   <>
-    {/* <!-- Enobong starts here --> */}
-
-    {/* <!-- Navbar --> */}
-    <header
-      id="navbar"
-      className="flex items-center justify-center overflow-x-hidden"
-    >
-      <p className="section-bg-title mt-24">
-        <span className="hidden text-center xl:block">GROOVE</span>
-        <span className="hidden text-center xl:block">MUSIC</span>
-      </p>
-      <nav className="-z-1 flex w-screen items-center justify-between rounded-full bg-[#09251E] bg-opacity-30 px-5 py-3 md:px-10 md:py-5 lg:px-20">
-        <div className="z-1 flex h-[3rem] w-[5rem] items-center md:h-[4rem] md:w-[9rem] lg:w-[11rem]">
-          <img
-            src="/images/vibbe-logo.png"
-            alt="logo"
-            className="object-contain"
-          />
-        </div>
-
-        {/* <!-- Desktop Nav --> */}
-        <div className="hidden items-center space-x-14 lg:flex">
-          <span>
-            <a href="">Docs</a>
-          </span>
-          <span>
-            <a href="">Explore</a>
-          </span>
-          <span>
-            <a href="">Community</a>
-          </span>
-          <button className="nav-btn">Connect wallet</button>
-        </div>
-
-        {/* <!-- Mobile Nav --> */}
-        <div htmlFor="" className="flex lg:hidden">
-          <i className="fas fa-bars"></i>
-        </div>
-      </nav>
-    </header>
-
     {/* <!-- Hero --> */}
     <main className="space-y-20">
       <section id="hero" className="items-center justify-evenly xl:flex">
@@ -114,118 +75,7 @@ export const Home = () => (
             this revolutionary journey to reshape the music industry.
           </p>
         </div>
-        <div className="relative">
-          <img
-            src="/images/second-logo.png"
-            alt="second-logo"
-            className="section-logo "
-          />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1512"
-            height="446"
-            viewBox="0 0 1512 446"
-            fill="none"
-            className="relative bottom-[-10.46rem] hidden md:flex"
-          >
-            <g filter="url(#filter0_d_4_80)">
-              <path
-                d="M-79.0919 341.05C-45.8302 287.507 39.3532 196.217 113.993 259.401C188.632 322.584 272.68 268.309 305.374 233.274C329.998 186.982 393.327 105.354 449.646 149.182C520.045 203.968 581.719 330.846 654.881 262.316C728.043 193.786 832.891 32.4667 874.937 91.1232C916.983 149.78 1008.92 324.564 1108.53 200.387C1208.13 76.2094 1239.91 -53.6697 1347.82 26.5671C1434.15 90.7566 1545.49 74.1699 1590.36 57.8529"
-                stroke="#00594C"
-                strokeWidth="2"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_d_4_80"
-                x="-83.9414"
-                y="0.806641"
-                width="1678.64"
-                height="444.771"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dy="100" />
-                <feGaussianBlur stdDeviation="2" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0.501961 0 0 0 0 0.32549 0 0 0 0 0.466667 0 0 0 1 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_4_80"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_4_80"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1512"
-            height="523"
-            viewBox="0 0 1512 523"
-            fill="none"
-            className="relative top-[-19rem] hidden md:flex"
-          >
-            <g filter="url(#filter0_d_4_82)">
-              <path
-                d="M-79.4347 360.541C-8.04569 307.193 144.119 209.186 181.667 243.951C228.602 287.406 276.606 448.572 333.657 412.291C390.708 376.01 483.559 191.729 555.722 192.886C627.885 194.044 661.172 401.254 751.202 372.126C841.232 342.999 769.46 168.888 877.043 121.823C984.625 74.7581 978.517 249.787 1051.23 269.649C1123.95 289.51 1147.37 277.895 1162.91 179.286C1178.45 80.6768 1236 -39.8562 1296.54 15.3408C1357.07 70.5378 1328.6 169.618 1413.24 196.269C1497.88 222.92 1535.01 55.313 1535.41 43.6019C1535.73 34.2331 1566.47 22.0925 1581.81 17.1933"
-                stroke="white"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_d_4_82"
-                x="-83.7339"
-                y="0.947266"
-                width="1669.69"
-                height="521.12"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dy="100" />
-                <feGaussianBlur stdDeviation="2" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_4_82"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_4_82"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
+       <DiscoverWavesCanvas />
       </section>
 
       {/* <!-- Airdrop --> */}
@@ -280,9 +130,6 @@ export const Home = () => (
           </div>
         </div>
       </section>
-      {/* <!-- Enobong stops here --> */}
-
-      {/* <!-- Josh starts here --> */}
 
       {/* <!-- Genesis --> */}
       <section id="genesis" className=" my-[16rem] font-bold">
@@ -342,64 +189,7 @@ export const Home = () => (
             <div className="gradient-outline h-[85%] w-[95%]"></div>
           </div>
           <p className="section-bg-title">ROADMAP</p>
-          <img
-            src="./images/roadmap.png"
-            alt="roadmap"
-            className="section-logo"
-          />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1512"
-            height="1159"
-            viewBox="0 0 1512 1159"
-            fill="none"
-            className="absolute -left-16 -top-52 -z-10 md:z-0 lg:z-10"
-          >
-            <g filter="url(#filter0_d_4_81)">
-              <path
-                d="M1697.48 0.999641C1662.56 36.6208 1585.23 322.674 1515.48 285.998C1445.73 249.323 1331.49 593.676 1297.98 617.499C1271.81 648.102 989.293 691.726 936.483 666.499C870.469 634.965 1072.99 905.967 998.482 952.998C923.974 1000.03 734.689 988.329 696.483 952.998C658.276 917.668 508.872 599.329 405.982 682.999C303.092 766.669 179.348 481.956 77.9825 435.999C-3.10974 399.234 -46.0258 273.508 -90.5176 285.998"
-                stroke="#00594C"
-                strokeWidth="2"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_d_4_81"
-                x="-108.788"
-                y="0.299805"
-                width="1824.98"
-                height="1157.74"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dy="155" />
-                <feGaussianBlur stdDeviation="9" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0.960784 0 0 0 0 0.984314 0 0 0 0 0.94902 0 0 0 1 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_4_81"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_4_81"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
+         <RoadMapCanvas />
           <div className="left-[7rem] top-[24rem] z-20 lg:absolute">
             <h3 className="text-3xl md:text-4xl lg:text-5xl">STAGE 1</h3>
             <ul className="text-lg md:text-xl lg:text-2xl">
@@ -480,39 +270,6 @@ export const Home = () => (
           </button>
         </div>
       </section>
-    </main>
-
-    <footer
-      id="footer"
-      className="m-5 justify-between font-medium md:m-10 md:flex"
-    >
-      <div className="text-xs md:text-lg lg:text-xl">
-        <p>© 2021 VIBBE. All Rights Reserved.</p>
-      </div>
-      <div className="mt-5 flex space-x-4 md:mr-5 md:mt-0">
-        <div className="flex h-[1.6rem] w-[1.6rem] items-center justify-center rounded-lg bg-[#513DA5] md:h-[3.2rem] md:w-[3.2rem]">
-          <img
-            src="./images/telegram-logo.png"
-            alt=""
-            className="h-[0.65rem] w-[0.7rem] md:h-[1.25rem] md:w-[1.35rem]"
-          />
-        </div>
-        <div className="flex h-[1.6rem] w-[1.6rem] items-center justify-center rounded-lg bg-[#513DA5] md:h-[3.2rem] md:w-[3.2rem]">
-          <img
-            src="./images/twitter-logo.png"
-            alt=""
-            className="h-[0.85rem] w-[0.85rem] md:h-[1.65rem] md:w-[1.65rem]"
-          />
-        </div>
-        <div className="flex h-[1.6rem] w-[1.6rem] items-center justify-center rounded-lg bg-[#513DA5] md:h-[3.2rem] md:w-[3.2rem]">
-          <img
-            src="./images/instagram-logo.png"
-            alt=""
-            className="h-[0.85rem] w-[0.85rem] md:h-[1.65rem] md:w-[1.65rem]"
-          />
-        </div>
-      </div>
-    </footer>
-    {/* <!-- Joshua stops here --> */}
+    </main>  
   </>
 );
